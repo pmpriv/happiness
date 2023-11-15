@@ -8,5 +8,6 @@ export interface DataRecord {
     Freedomtomakelifechoices: number;
     Generosity: number;
     Perceptionsofcorruption: number | null;
+    ISO_A2: string;
     ISO_A3: string;
 }
