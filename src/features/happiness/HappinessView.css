@@ -1,0 +1,16 @@
+.happiness-view {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.happiness-view .section {
+    max-width: 90%;
+    padding-bottom: 10px;
+}
+
+.happiness-view .section:not(:last-child) {
+    border-bottom: 1px solid lightgray;
+}

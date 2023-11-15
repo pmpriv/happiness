@@ -1,0 +1,10 @@
+.bubblevis {
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}
+
+.bubblevis_row {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+}
