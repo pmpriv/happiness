@@ -22,3 +22,4 @@ Data is loaded on-demand using RTK query, attached to the main store and consume
 - `npm run dev` - start dev server and open browser
 - `build` - build for production
 - `preview` - locally preview production build
+- `process-data` - attach ISO country codes to the data
