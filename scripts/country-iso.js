@@ -13,7 +13,7 @@ function processFile(filepath) {
     const raw = readFileSync(filepath);
     const data = JSON.parse(raw);
     const newData = data.map(r => processRecord(r));
-    writeFileSync(filepath, JSON.stringify(newData, null, '  '));
+    writeFileSync(filepath, JSON.stringify(newData, null));
 }
 
 function processRecord(record) {
