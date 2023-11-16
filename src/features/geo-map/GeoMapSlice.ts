@@ -50,8 +50,10 @@ export const selectGeoMap = (state: RootState) => state.geoMap;
 
 export default geoMapSlice.reducer;
 
+const baseUrl = `${import.meta.env.BASE_URL}map/`;
+
 async function fetchWorldTopology(): Promise<Topology> {
-  const res = await fetch("/map/world-topo.json");
+  const res = await fetch(`${baseUrl}world-topo.json`);
   if (!res.ok) {
     throw new Error("Failed to load topology");
   }

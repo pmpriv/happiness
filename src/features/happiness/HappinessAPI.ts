@@ -6,9 +6,11 @@ export const dataFiles = [
     { year: 2019, name: "2019.json" },
 ];
 
+const baseUrl = `${import.meta.env.BASE_URL}data/`;
+
 export const happinessApi = createApi({
     reducerPath: 'happinessApi',
-    baseQuery: fetchBaseQuery({ baseUrl: '/data/' }),
+    baseQuery: fetchBaseQuery({ baseUrl }),
     endpoints: (builder) => ({
       happinessByYear: builder.query<DataRecord[], string | number>({
         query: (name) => `${name}.json`,
